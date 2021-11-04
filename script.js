@@ -6,12 +6,17 @@
 // @include     https://www.binance.com/en/futures/strategy/*
 // ==/UserScript==
 
-(function () {
+((() => {
   const changeLayout = () => {
-    const backShadow = document.querySelector('html > body > div:nth-of-type(13) > div:nth-of-type(1)');
-    backShadow.style.display = 'none';
-    const modal = document.querySelector('html > body > div:nth-of-type(13) > div:nth-of-type(2)');
-    modal.style['align-self'] = 'flex-end';
+    const parentDiv = [...document.getElementsByTagName('div')].find(
+      (elm) => elm.children?.[1]?.children?.[1]?.classList?.contains('style-dialog-body'),
+    );
+    if (parentDiv) {
+      const backShadow = parentDiv.childNodes[0];
+      backShadow.style.display = 'none';
+      const modal = parentDiv.childNodes[1];
+      modal.style['align-self'] = 'flex-end';
+    }
   };
 
   document.body.addEventListener(
@@ -20,4 +25,4 @@
       setTimeout(changeLayout, 0);
     },
   );
-}());
+})());
