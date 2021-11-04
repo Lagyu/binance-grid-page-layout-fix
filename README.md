@@ -1,6 +1,6 @@
 # binance-grid-page-layout-fix
 On Binance storategy trade grid page, this script moves modal to the bottom and hides background shadow,<br>
-so that you can see the chart and current price along with worikng grid.
+so that you can see the chart and the current price along with worikng grid.
 
 ## Usage
 Use `script.js` with [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) on Firefox or [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) on Chrome based browsers.
