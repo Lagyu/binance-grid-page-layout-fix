@@ -1,5 +1,5 @@
 # binance-grid-page-layout-fix
-On Binance storategy trade grid page, place the modal to bottom and hide background shadow,<br>
+On Binance storategy trade grid page, this script moves modal to the bottom and hides background shadow,<br>
 so that you can see the chart and current price along with worikng grid.
 
 ## Usage
